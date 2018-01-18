@@ -1,10 +1,10 @@
 /* === INTROPROG ABGABE ===
  * Blatt 7, Aufgabe 2
- * Tutorium: t21
- * Gruppe: g07
+ * Tutorium: txx
+ * Gruppe: gxx
  * Gruppenmitglieder:
- *  - Jannik Novak
- *  - Ashkan Ardeshirdavani
+ *  - Max Mustermann
+ *  - Rainer Testfall
  * ========================
  */
 
