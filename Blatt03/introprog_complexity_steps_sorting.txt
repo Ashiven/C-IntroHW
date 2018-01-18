@@ -1,0 +1,123 @@
+=== INTROPROG ABGABE ===
+Blatt 3, Aufgabe 1 (7 Fragen)
+Tutorium: t21
+Abgabe von: Jannik Novak
+========================
+
+
+=== HINWEISE ===
+ - Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+ - Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+ - Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+ - Ersetze neben den jeweils von dir gewählten Antworten unten das leere Kästchen [ ] durch ein [X].
+ - Es ist immer nur genau eine Antwort korrekt.
+ - Füge am Ende der Frage optional einen Kommentartext anstelle des Platzhalters in den spitzen Klammern ein.
+ - Halte das vorgegebene Format unbedingt ein!
+ - NIMM SONST KEINE WEITEREN ÄNDERUNGEN AM TEXT VOR!
+=== ENDE HINWEISE ===
+
+
+=== FRAGE 1 ===
+Inwieweit stehen die Anzahl der gezählten Befehle und die (empirisch gemessenen) Laufzeiten in Beziehung zu einander?
+
+ANTWORT:
+
+	[X] Es gibt einen starken Zusammenhang
+	[ ] Es gibt kaum einen Zusammenhang
+	[ ] Es gibt gar keinen Zusammenhang
+	[ ] Es ist unklar ob ein Zusammenhang besteht
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 1 ===
+
+
+=== FRAGE 2 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass k=n ist. Somit wächst die Größe des Wertebereichs linear mit der Größe der Eingabe. 
+Welcher der beiden Algorithmen (Insertionsort bzw. Countsort) weist für große n im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[ ] Beide Algorithmen weisen eine sehr ähnliche Worst Case Laufzeit auf
+	[X] Countsort
+	[ ] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 2 ===
+
+
+=== FRAGE 3 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass k=n² ist. Somit wächst die Größe des Wertebereichs quadratisch mit der Größe der Eingabe. 
+Welcher der beiden Algorithmen (Insertionsort bzw. Countsort) weist für große n im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[X] Beide Algorithmen weisen eine sehr ähnliche Worst Case Laufzeit auf
+	[ ] Countsort
+	[ ] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 3 ===
+
+
+=== FRAGE 4 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass k=n³ ist. Somit wächst die Größe des Wertebereichs kubisch mit der Größe der Eingabe. 
+Welcher der beiden Algorithmen (Insertionsort bzw. Countsort) weist für große n im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[ ] Beide Algorithmen weisen eine sehr ähnliche Worst Case Laufzeit auf
+	[ ] Countsort
+	[X] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 4 ===
+
+
+=== FRAGE 5 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass n=100.000 und k=100 ist. 
+Welcher der beiden Algorithmen weist im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[ ] Die Laufzeiten der beiden Algorithmen sind vergleichbar
+	[X] Countsort
+	[ ] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 5 ===
+
+
+=== FRAGE 6 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass n=100.000 ist und die Größe des Wertebereichs zur Entwicklungszeit nicht bekannt ist. k kann somit beliebig viel größer als n sein.
+Welcher der beiden Algorithmen weist im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[ ] Countsort
+	[X] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 6 ===
+
+
+=== FRAGE 7 ===
+Sei n die Eingabgelänge des Arrays und k die Größe des Wertebereichs (wie in der Vorlesung).
+Es gelte, dass n=100.000 ist und die Größe des Wertebereichs bei k=100.000.000 liegt.
+Wir nehmen an, dass die Eingabe schon maßgeblich aufsteigend sortiert ist. 
+Konkret gelte A[i] < A[i+k] für alle natürlichen Zahlen i in {1,2,3,...,999.998} und alle k in {2,3,4,...,n-i} (unter Verwendung der Pseudocode-Konvention, dass Arrays bei 1 beginnen).
+Welcher der beiden Algorithmen weist im Worst Case unter diesen Annahmen eine bessere Laufzeit auf?
+
+ANTWORT:
+
+	[ ] Countsort
+	[X] Insertionsort
+
+KOMMENTAR: <kein Kommentar>
+=== ENDE FRAGE 7 ===
+
+

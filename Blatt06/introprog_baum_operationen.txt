@@ -1,0 +1,112 @@
+=== HEADER ===
+-----------------------------
+Blatt 6, Aufgabe 1 (6 Fragen)
+-----------------------------
+Tutorium: t21
+Gruppe: g07
+Gruppenmitglieder:
+ - Jannik Novak
+ - Ashkan Ardeshirdavani
+---------------------------------------------
+ TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
+ DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
+ BEACHTEN SIE DABEI DAS VORGEGEBENE SCHEMA
+---------------------------------------------
+=== ENDE HEADER ===
+
+
+=== HINWEISE ===
+ - Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+ - Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+ - Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+ - Gib deine Antworten nur im Antwortfeld (ANTWORT) ein und nimm sonst keine Änderungen vor.
+ - Die Angabe des Zustands der binären Suchbäume hat gemäß der Nummeriung zu erfolgen, welche auf dem Aufgabenblatt 6 beschrieben ist. 
+ - Die Reihenfolge in der die Knoten angegeben werden ist egal.
+ - Die Angabe eines Index:Wert Paars hat ausschließlich auf einer einzelnen Zeile zu erfolgen. Die Angabe "1:o 2:i" oder ähnliches wird nicht akzeptiert.
+
+Beispiel: Um den originalen Zustand des Baums zu beschreiben, wäre also folgende Antwort korrekt:
+
+ANTWORT: 
+1:o
+2:i
+3:t
+4:d
+5:l
+6:p
+
+=== ENDE HINWEISE ===
+
+
+=== FRAGE 1 ===
+Gib den Zustand des binären Suchbaums an, nachdem der Knoten o gelöscht wurde.
+
+ANTWORT: 
+1:t
+2:i
+3:p
+4:d
+5:l
+
+=== ENDE FRAGE 1 ===
+
+
+=== FRAGE 2 ===
+Gib den Zustand des binären Suchbaums an, nachdem der Knoten o und der Knoten i gelöscht wurden.
+
+ANTWORT: 
+1:t
+2:l
+3:p
+4:d
+
+=== ENDE FRAGE 2 ===
+
+
+=== FRAGE 3 ===
+Gib den Zustand des binären Suchbaums an, nachdem der Knoten o, der Knoten i und der Knoten t gelöscht wurden.
+
+ANTWORT:
+1:p
+2:l
+3:d
+
+=== ENDE FRAGE 3 ===
+
+
+=== FRAGE 4 ===
+Gib den Zustand des binären Suchbaums an, nachdem der Knoten o, der Knoten i, der Knoten t und der Knoten p gelöscht wurden.
+
+ANTWORT: 
+1:l
+2:d
+
+=== ENDE FRAGE 4 ===
+
+
+=== FRAGE 5 ===
+Gib den Zustand des binären Suchbaums an, nachdem der Knoten o, der Knoten i, der Knoten t, der Knoten p und der Knoten d gelöscht wurden.
+
+ANTWORT: 
+1:l
+
+=== ENDE FRAGE 5 ===
+
+
+=== FRAGE 6 ===
+Gib den Zustand des originalen binären Suchbaums (Abbildung 1, Aufgabenblatt 6) an, nachdem die Knoten k, v, m, u (in dieser Reihenfolge) eingefügt wurden.
+
+ANTWORT: 
+1:o
+2:i
+3:t
+4:d
+5:l
+6:p
+7:v
+8:k
+9:m
+10:u
+
+=== ENDE FRAGE 6 ===
+
+
