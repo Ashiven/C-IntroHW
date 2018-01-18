@@ -1,7 +1,7 @@
 === INTROPROG ABGABE ===
 Blatt 3, Aufgabe 1 (7 Fragen)
-Tutorium: t21
-Abgabe von: Jannik Novak
+Tutorium: txx
+Abgabe von: Max Mustermann
 ========================
 
 
