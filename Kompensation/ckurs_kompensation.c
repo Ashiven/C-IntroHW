@@ -1,6 +1,6 @@
 /* ==== KOMPENSATION ABGABE ====
  * Kompensationsaufgabe
- * Abgabe von: Jannik Novak
+ * Abgabe von: Max Mustermann
  * =============================
  */
 #include <stdio.h>
