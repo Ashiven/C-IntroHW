@@ -11,18 +11,18 @@
 #define MAX_MATCH 200 
 #define MAX_STRING 255 
 
-typedef struct QElement { //final
+typedef struct QElement { 
 	char string[MAX_STRING];
 	struct QElement *next;
 } Qelement;
 
-typedef struct Queue { //final
+typedef struct Queue { 
 	Qelement *first;
 	Qelement *rear;
 	int count;
 } Queue;
 
-Queue* init_queue() { //final
+Queue* init_queue() { 
 	Queue *new_queue = (Queue*)malloc(sizeof(Queue));
 	if(new_queue == NULL) {
 		printf("Overflow\n");
@@ -33,7 +33,7 @@ Queue* init_queue() { //final
 	return new_queue;
 }
 
-void queue_freigeben(Queue *queue) { //final
+void queue_freigeben(Queue *queue) { 
 	if(queue -> first == NULL) {
 		free(queue);
 		printf("\tQueue ist leer!(queue_freigeben)\n");
@@ -47,7 +47,7 @@ void queue_freigeben(Queue *queue) { //final
 	free(queue); 
 }
 
-void enqueue(Queue *queue, char* string){ //final
+void enqueue(Queue *queue, char* string){ 
 	Qelement *new_elem = (Qelement*)malloc(sizeof(Qelement));
 	if(new_elem == NULL) {
 		printf("Overflow\n");
@@ -62,7 +62,7 @@ void enqueue(Queue *queue, char* string){ //final
 	queue -> rear = new_elem;
 }
 
-void dequeue (Queue *queue) { //final
+void dequeue (Queue *queue) { 
 	if(queue -> first == NULL) {
 		printf("\tQueue ist leer!(dequeue)\n");
 		return; }
@@ -71,7 +71,7 @@ void dequeue (Queue *queue) { //final
 	free(temp);
 }
 
-void queue_ausgeben(Queue *queue) { //final
+void queue_ausgeben(Queue *queue) { 
 	Qelement *p;
 	if(queue -> first == NULL) {
 		printf("\tQueue ist leer!(queue_ausgeben)\n");
@@ -84,7 +84,7 @@ void queue_ausgeben(Queue *queue) { //final
 	printf("\n");
 }
 
-int match(Queue *suchphrase, Queue *queue) { 		//final
+int match(Queue *suchphrase, Queue *queue) { 	
 	if(suchphrase == NULL && queue == NULL) {
 		return 0; }
 	Qelement *search = suchphrase -> first;
