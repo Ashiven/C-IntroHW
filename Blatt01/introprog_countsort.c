@@ -14,7 +14,7 @@ int MAX_VALUE = 100;
 
 void count_sort_calculate_counts(int input_array[], int len, int count_array[]) 
 {
-	for(int j = 0; j < MAX_LAENGE; j++) 
+	for(int j = 0; j <= MAX_VALUE; j++) 
 	{
 		count_array[j] = 0;
 	}
@@ -26,7 +26,7 @@ void count_sort_calculate_counts(int input_array[], int len, int count_array[])
 void count_sort_write_output_array(int output_array[], int len, int count_array[]) 
 {
 	int k = 0;
-	for(int i = 0; i < MAX_VALUE + 1; i++) 
+	for(int i = 0; i <= MAX_VALUE; i++) 
 	{
 		for(int j = 0 ; j < count_array[i];j++) 
 		{
