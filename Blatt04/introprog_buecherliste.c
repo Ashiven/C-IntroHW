@@ -1,7 +1,7 @@
 /* === INTROPROG ABGABE ===
  * Blatt 4, Aufgabe 1
- * Tutorium: t21
- * Abgabe von: Jannik Novak
+ * Tutorium: txx
+ * Abgabe von: Max Mustermann
  * ========================
  */
 
