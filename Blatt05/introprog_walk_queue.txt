@@ -1,0 +1,57 @@
+=== HEADER ===
+-----------------------------
+Blatt 5, Aufgabe 2 (2 Fragen)
+-----------------------------
+Tutorium: t21
+Gruppe: g07
+Gruppenmitglieder:
+ - Ashkan Ardeshirdavani
+ - Jannik Novak
+---------------------------------------------
+ TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
+ DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
+ BEACHTEN SIE DABEI DAS VORGEGEBENE SCHEMA
+---------------------------------------------
+=== ENDE HEADER ===
+
+
+=== HINWEISE ===
+ - Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+ - Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+ - Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+ - Gib deine Antworten nur im Antwortfeld (ANTWORT) ein und nimm sonst keine Änderungen vor.
+=== ENDE HINWEISE ===
+
+
+=== FRAGE 1 ===
+Durchlaufe den gegebenen Baum auf dem Blatt 5 (Abbildung 2) gemäß dem in der Vorlesung vorge-
+stellten Verfahren. Gib die Reihenfolge an, in der die Knoten bearbeitet (auf den Slides wurden sie
+ausgegeben) werden.
+
+Gib die Reihenfolge durch Kommas getrennt an. Beispiel: z, y, x würde der Reihenfolge z, dann y und 
+dann x entsprechen.
+
+ANTWORT: 4, 12, 9, 16, 20, 15
+
+=== ENDE FRAGE 1 ===
+
+
+=== FRAGE 2 ===
+Füge unter der Verwendung der (in der Vorlesung vorgestellten) enqueue-Funktion die folgenden
+Werte in der gegebenen Reihenfolge in eine initial leere FIFO Queue ein: 15, 3, 6, 10, 11.
+Gib die Reihenfolge an, in welcher die Elemente durch die dequeue-Funktion entnommen werden.
+
+Beispiel: Gegeben sei die folgende FIFO Queue
+
+  head                 tail
+    |                   |
+  -------------------------
+  | u | v | w | y | z | b |
+  -------------------------
+
+Die Reihenfolge in der die Elemente der FIFO Queue gemäß der dequeue-Funktion entnommen werden ist: u, v, w, y, z, b
+
+ANTWORT: 15, 3, 6, 10, 11
+
+=== ENDE FRAGE 2 ===
+
