@@ -28,7 +28,7 @@ void count_sort_write_output_array(int output_array[], int len, int count_array[
 	int k = 0;
 	for(int i = 0; i <= MAX_VALUE; i++) 
 	{
-		for(int j = 0 ; j < count_array[i];j++) 
+		for(int j = 0 ; j < count_array[i]; j++) 
 		{
 			output_array[k] = i;
 			k++;
