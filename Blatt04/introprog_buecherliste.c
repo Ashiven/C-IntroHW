@@ -49,7 +49,8 @@ void free_list(list *alist)
 {
 	element *element = alist -> first;
 	struct _element *alt;
-	while(element != NULL) {
+	while(element) 
+	{
 		alt = element;
 		element = element -> next;
 		free(alt);
