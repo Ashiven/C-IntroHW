@@ -18,7 +18,8 @@ void count_sort_calculate_counts(int input_array[], int len, int count_array[])
 	{
 		count_array[j] = 0;
 	}
-	for(int i = 0; i < len; i++) {
+	for(int i = 0; i < len; i++) 
+	{
         	count_array[input_array[i]] = count_array[input_array[i]] + 1;
 	}
 }
