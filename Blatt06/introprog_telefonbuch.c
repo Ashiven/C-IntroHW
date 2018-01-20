@@ -67,7 +67,7 @@ void bst_insert_node(bstree *bst, unsigned long phone, char *name)
 
 bst_node* find_node(bstree* bst, unsigned long phone) 
 {	
-	if(phone < 1 || phone > 10000) 
+	if(phone < 1 || phone > 9999) 
 	{
 		return NULL; 
 	}
