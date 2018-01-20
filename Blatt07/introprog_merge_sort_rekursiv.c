@@ -21,38 +21,50 @@ void merge(int* array, int first, int middle, int last)
 	int m = middle + 1;
 	int i = 1;
 	int j = 1;
-	while(k <= middle && m <= last) {
-		if(array[k] <= array[m]) {
+	while(k <= middle && m <= last) 
+	{
+		if(array[k] <= array[m]) 
+		{
 			*(mrgarray + i) = array[k];
-			++k; }
+			k++; 
+		}
 		else {
 			*(mrgarray + i) = array[m];
-			++m; }
-		++i; 
+			m++; 
+		}
+		i++; 
 	}
-	while(k <= middle) {
+	while(k <= middle) 
+	{
 		*(mrgarray + i) = array[k];
-		++k;
-		++i; }
+		k++;
+		i++; 
+	}
 
-	while(m <= last) {
+	while(m <= last) 
+	{
 		*(mrgarray + i) = array[m];
-		++m;
-		++i; }
-	while( j < i) {
+		m++;
+		i++; 
+	}
+	while( j < i) 
+	{
 		array[first + j - 1] = *(mrgarray + j);
-		++j; }
+		j++; 
+	}
 	free(mrgarray);
 }
 
 void merge_sort(int* array, int first, int last)
 {
 	int q;
-	if(first < last) {
+	if(first < last) 
+	{
 		q = (first + last)/2;
 		merge_sort(array, first, q);
 		merge_sort(array, q + 1, last);
-		merge(array, first, q, last); }
+		merge(array, first, q, last); 
+	}
 }
 
 int main (int argc, char *argv[])
