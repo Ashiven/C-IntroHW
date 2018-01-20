@@ -2,8 +2,8 @@
 -----------------------------
 Blatt 5, Aufgabe 2 (2 Fragen)
 -----------------------------
-Tutorium: t21
-Gruppe: g07
+Tutorium: txx
+Gruppe: gxx
 Gruppenmitglieder:
  - Max Mustermann
  - Rainer Testfall
