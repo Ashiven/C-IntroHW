@@ -22,83 +22,114 @@ typedef struct Queue {
 	int count;
 } Queue;
 
-Queue* init_queue() { 
+Queue* init_queue() 
+{ 
 	Queue *new_queue = (Queue*)malloc(sizeof(Queue));
-	if(new_queue == NULL) {
+	if(new_queue == NULL) 
+	{
 		printf("Overflow\n");
-		return NULL; }
+		return NULL; 
+	}
 	new_queue -> first = NULL;
 	new_queue -> rear = NULL;
 	new_queue -> count = 0;
 	return new_queue;
 }
 
-void queue_freigeben(Queue *queue) { 
-	if(queue -> first == NULL) {
+void queue_freigeben(Queue *queue) 
+{ 
+	if(queue -> first == NULL) 
+	{
 		free(queue);
 		printf("\tQueue ist leer!(queue_freigeben)\n");
-		return; }
+		return; 
+	}
 	Qelement *prev;
 	Qelement *current = queue -> first;
-	while(current) {
+	while(current) 
+	{
 		prev = current;
 		current = current -> next;
-		free(prev); }
+		free(prev); 
+	}
 	free(queue); 
 }
 
-void enqueue(Queue *queue, char* string){ 
+void enqueue(Queue *queue, char* string)
+{ 
 	Qelement *new_elem = (Qelement*)malloc(sizeof(Qelement));
-	if(new_elem == NULL) {
+	if(new_elem == NULL) 
+	{
 		printf("Overflow\n");
-		return; }
+		return; 
+	}
 	new_elem -> next = NULL;
 	strncpy(new_elem -> string, string, MAX_STRING - 1);
 	new_elem -> string[MAX_STRING - 1] = '\0';
-	if(queue -> first == NULL) {
-		queue -> first = new_elem; }
+	if(queue -> first == NULL) 
+	{
+		queue -> first = new_elem; 
+	}
 	else {
-		queue -> rear -> next = new_elem; }
+		queue -> rear -> next = new_elem; 
+	}
 	queue -> rear = new_elem;
 }
 
-void dequeue (Queue *queue) { 
-	if(queue -> first == NULL) {
+void dequeue (Queue *queue) 
+{ 
+	if(queue -> first == NULL) 
+	{
 		printf("\tQueue ist leer!(dequeue)\n");
-		return; }
+		return; 
+	}
 	Qelement *temp = queue -> first;
 	queue -> first = queue -> first -> next;
 	free(temp);
 }
 
-void queue_ausgeben(Queue *queue) { 
+void queue_ausgeben(Queue *queue) 
+{ 
 	Qelement *p;
-	if(queue -> first == NULL) {
+	if(queue -> first == NULL) 
+	{
 		printf("\tQueue ist leer!(queue_ausgeben)\n");
-		return; }
+		return; 
+	}
 	p = queue -> first;
 	printf("\t");
-	while(p) {
+	while(p) 
+	{
 		printf("%s ", p -> string);
-		p = p -> next; }
+		p = p -> next; 
+	}
 	printf("\n");
 }
 
-int match(Queue *suchphrase, Queue *queue) { 	
-	if(suchphrase == NULL && queue == NULL) {
-		return 0; }
+int match(Queue *suchphrase, Queue *queue) 
+{ 	
+	if(suchphrase == NULL && queue == NULL) 
+	{
+		return 0; 
+	}
 	Qelement *search = suchphrase -> first;
 	Qelement *word = queue -> first;
-	while(search != NULL && word != NULL) {
-		if(strcmp(search -> string, word -> string) != 0) {
-			break; }
+	while(search != NULL && word != NULL) 
+	{
+		if(strcmp(search -> string, word -> string) != 0) 
+		{
+			break; 
+		}
 		search = search -> next;
 		word = word -> next; 
 	}
-	if(search == NULL && word == NULL) {
-		return 0; }
+	if(search == NULL && word == NULL) 
+	{
+		return 0; 
+	}
 	else {
-		return 1; }
+		return 1; 
+	}
 }
 
 int main(int argc, char** argv) {
@@ -109,9 +140,11 @@ int main(int argc, char** argv) {
     }
 	Queue* suchphrase = init_queue();
 	Queue* queue = init_queue();
-	if(!suchphrase || !queue) {
+	if(!suchphrase || !queue) 
+	{
 		printf("\tFehler beim initialisieren der Queues!\n");
-		return -1; }
+		return -1; 
+	}
 	int hitcount = 0;	
 	
 	FILE *fp = fopen(argv[1], "r");
@@ -121,19 +154,23 @@ int main(int argc, char** argv) {
 		perror("Fehler beim öffnen der Datei!\n");
 		return -2; }
 
-	for(int i = 2; i < argc; ++i) {
+	for(int i = 2; i < argc; i++) 
+	{
 		strncpy(buffer, argv[i], MAX_STRING - 1);
 		buffer[MAX_STRING - 1] = '\0';
 		enqueue(suchphrase, buffer);
-		suchphrase -> count = suchphrase -> count + 1; }
+		suchphrase -> count = suchphrase -> count + 1; 
+	}
 	printf("\n\tElemente der Suchphrase:\n");
 	queue_ausgeben(suchphrase);
 	printf("\n");
 
-	while(queue -> count != suchphrase -> count) {
+	while(queue -> count != suchphrase -> count) 
+	{
 		fscanf(fp, "%254s", buffer);
 		enqueue(queue, buffer); 
-		queue -> count = queue -> count + 1; }
+		queue -> count = queue -> count + 1; 
+	}
 	/*printf("\n\tElemente der Queue:\n");	
 	queue_ausgeben(queue);
 	
@@ -149,13 +186,18 @@ int main(int argc, char** argv) {
 	int testmatch = match(suchphrase, queue);
 	printf("\tMatch return vor Suche: %d\n\n", testmatch);*/
 
-	while(!feof(fp)) {
-		if(match(suchphrase, queue) == 0) {
+	while(!feof(fp)) 
+	{
+		if(match(suchphrase, queue) == 0) 
+		{
 			++hitcount;
-			printf("\t%d. Treffer beginnend bei Wort Nr. %d\n", hitcount, queue -> count - suchphrase -> count + 1); } 
-		if(hitcount == MAX_MATCH) {
+			printf("\t%d. Treffer beginnend bei Wort Nr. %d\n", hitcount, queue -> count - suchphrase -> count + 1); 
+		} 
+		if(hitcount == MAX_MATCH) 
+		{
 			printf("\tmaximale Anzahl an Treffern erreicht!\n");
-			break; }
+			break; 
+		}
 		fscanf(fp, "%254s", buffer);
 		enqueue(queue, buffer); 
 		dequeue(queue);
