@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     printf("Unsortiertes Array:");
     print_array(input_array, len);
 
-    int count_array[MAX_LAENGE];
+    int count_array[MAX_VALUE + 1];
     int output_array[MAX_LAENGE];
 
     count_sort_calculate_counts(input_array, len, count_array);
