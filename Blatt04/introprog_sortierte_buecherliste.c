@@ -25,11 +25,14 @@ typedef struct _list {
     int count;         
 } list;
 
-element *insert_sorted(element *first, element *new_elem) {
+element *insert_sorted(element *first, element *new_elem) 
+{
 	element *prev, *current, *temp;
 	temp = new_elem;
-	if(!first) {
-		first = temp; }
+	if(!first) 
+	{
+		first = temp; 
+	}
 	else {
 		current = first;
 		prev = NULL;
@@ -59,7 +62,8 @@ element *insert_sorted(element *first, element *new_elem) {
 	return first;
 }
 
-element *construct_element(char *title, char* author, int year, long long int isbn) {
+element *construct_element(char *title, char* author, int year, long long int isbn) 
+{
 	element *neu = (element*) malloc(sizeof(element));
 	strncpy(neu -> title , title, MAX_STR - 1);
 	strncpy(neu -> author, author, MAX_STR - 1);
@@ -71,10 +75,12 @@ element *construct_element(char *title, char* author, int year, long long int is
 	return neu;
 }
 
-void free_list(list *alist) {
+void free_list(list *alist) 
+{
 	element *element = alist -> first;
 	struct _element *alt;
-	while(element != NULL) {
+	while(element != NULL) 
+	{
 		alt = element;
 		element = element -> next;
 		free(alt);
