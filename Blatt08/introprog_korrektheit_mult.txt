@@ -1,0 +1,46 @@
+=== HEADER ===
+-----------------------------
+Blatt 8, Aufgabe 1 (2 Fragen)
+-----------------------------
+Tutorium: tXX
+Gruppe: gXX
+Gruppenmitglieder:
+ - Erika Mustermann
+ - Rainer Testfall
+---------------------------------------------
+ TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
+ DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
+ BEACHTEN SIE DABEI DAS VORGEGEBENE SCHEMA
+---------------------------------------------
+=== ENDE HEADER ===
+
+
+=== HINWEISE ===
+ - Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+ - Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+ - Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+ - Gib deine Antworten nur im Antwortfeld (ANTWORT) ein und nimm sonst keine Änderungen vor.
+ - Die Beantwortung der Fragen hat gemäß der Beschreibung auf dem Übungszettel zu erfolgen.
+
+Beispielfrage: Wie lautet die Korrektheitsbedingung des Algorithmus MaxSearch?
+
+ANTWORT: C19 & A25
+
+=== ENDE HINWEISE ===
+
+
+=== FRAGE 1 ===
+Gib die Korrektheitsbedingung für den Algorithmus Mult an.
+
+ANTWORT: 
+
+=== ENDE FRAGE 1 ===
+
+
+=== FRAGE 2 ===
+Gib eine Schleifeninvariante der for-Schleife (Zeilen 3-4) an, mit welcher die Korrektheit 
+des Algorithmus Mult bewiesen werden kann.
+
+ANTWORT: 
+
+=== ENDE FRAGE 2 ===
