@@ -20,27 +20,37 @@ void merge(int* array, int first, int middle, int last)
 	int m = middle + 1;
 	int i = 1;
 	int j = 1;
-	while(k <= middle && m <= last) {
-		if(array[k] <= array[m]) {
+	while(k <= middle && m <= last) 
+	{
+		if(array[k] <= array[m]) 
+		{
 			*(mrgarray + i) = array[k];
-			++k; }
+			k++; 
+		}
 		else {
 			*(mrgarray + i) = array[m];
-			++m; }
-		++i; 
+			m++; 
+		}
+		i++; 
 	}
-	while(k <= middle) {
+	while(k <= middle) 
+	{
 		*(mrgarray + i) = array[k];
-		++k;
-		++i; }
+		k++;
+		i++; 
+	}
 
-	while(m <= last) {
+	while(m <= last) 
+	{
 		*(mrgarray + i) = array[m];
-		++m;
-		++i; }
-	while( j < i) {
+		m++;
+		i++; 
+	}
+	while( j < i) 
+	{
 		array[first + j - 1] = *(mrgarray + j);
-		++j; }
+		j++; 
+	}
 	free(mrgarray);
 }
 
@@ -50,9 +60,11 @@ void merge_sort(int* array, int first, int last)
 	int left;
 	int middle = 0;
 	int right = 0;
-	while(step <= last) {
+	while(step <= last) 
+	{
 		left = 0;
-		while(left <= last - step) {
+		while(left <= last - step) 
+		{
 			middle = left + step - 1;
 			middle = ((middle < last) ? middle : last);
 			right = left + 2 * step - 1;
