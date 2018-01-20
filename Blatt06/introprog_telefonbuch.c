@@ -26,13 +26,15 @@ void bst_insert_node(bstree *bst, unsigned long phone, char *name)
 	char *newname = (char*)malloc(len * sizeof(char));
 	snprintf(newname, len, "%s", name);
 	bst_node *new_elem = (bst_node*)malloc(sizeof(bst_node));
+
+	new_elem -> phone = phone;
+	new_elem -> name = newname;
+	new_elem -> left = NULL;
+	new_elem -> right = NULL;
+
 	if(bst -> root == NULL) 
 	{
-		new_elem -> phone = phone;
-		new_elem -> name = newname;
 		new_elem -> parent = NULL;
-		new_elem -> left = NULL;
-		new_elem -> right = NULL;
 		bst -> root = new_elem; 
 	}				
 	else {
@@ -52,23 +54,16 @@ void bst_insert_node(bstree *bst, unsigned long phone, char *name)
 		}	
 		if(prev -> phone < phone) 
 		{
-			new_elem -> phone = phone;
-			new_elem -> name = newname;
 			new_elem -> parent = prev;
-			new_elem -> left = NULL;
-			new_elem -> right = NULL;
 			prev -> right = new_elem; 
 		}
 		else {
-			new_elem -> phone = phone;
-			new_elem -> name = newname;
 			new_elem -> parent = prev;
-			new_elem -> left = NULL;
-			new_elem -> right = NULL;
 			prev -> left = new_elem; 
 		}
 	}
 }
+
 
 bst_node* find_node(bstree* bst, unsigned long phone) 
 {	
