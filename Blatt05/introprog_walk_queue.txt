@@ -31,7 +31,7 @@ ausgegeben) werden.
 Gib die Reihenfolge durch Kommas getrennt an. Beispiel: z, y, x würde der Reihenfolge z, dann y und 
 dann x entsprechen.
 
-ANTWORT: 4, 12, 9, 16, 20, 15
+ANTWORT: 4, 9, 12, 15, 20, 16
 
 === ENDE FRAGE 1 ===
 
