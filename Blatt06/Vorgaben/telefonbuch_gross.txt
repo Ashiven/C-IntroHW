@@ -1,0 +1,63 @@
+2293;Philip J. Fry
+9186;Turanga Leela
+7701;Bender Bending Rodriguez
+5635;Amy Wong
+8480;Hermes Conrad
+0431;Doctor John Zoidberg
+2031;Lord Nibbler
+5040;Zapp Brannigan
+7887;Kif Kroker
+7637;Mom
+1694;Headless Body of Agnew
+0386;Boxy
+4459;Brain Slugs
+2298;Brain Spawn
+3422;Calculon
+4884;Antonio Calculon
+9011;The Crushinator
+1685;Father Changstein-El-Gamal
+9979;Chanukah Zombie
+7806;Clamps
+1420;Dwight Conrad
+8817;LaBarbara Conrad
+9193;Donbot
+1546;Elzar
+2109;Cubert Farnsworth
+5979;Flexo
+8565;Al Gore's Head
+6130;Gypsy-bot
+3797;Stephen Hawking
+0800;Hedonismbot
+6856;Professor Hubert J. Farnsworth
+5283;Horrible Gelatinous Blob
+6626;Hyperchicken
+4409;Hypnotoad
+8757;Kwanzaabot
+8604;Lrrr
+7279;Linda van Schoonhoven
+8039;Hattie McDoogal
+5752;Michelle
+8553;Morbo the Annihilator
+9592;Joey Mousepad
+1053;Randy Munchnik
+5820;Richard Nixon's Head
+3691;Mr. Panucci
+6125;Pazuzu
+6873;Petunia
+0065;Reverend Lionel Preacherbot
+5061;Roberto
+8199;Robot Devil
+1335;Robot Santa
+4782;Sal
+4047;Scruffy
+7215;Barbados Slim
+8615;Smitty
+9664;Bubblegum Tate
+1008;Tinny Tim
+3904;Turanga Morris
+8178;Turanga Munda
+4345;URL
+2806;Warden Vogel
+8686;Dr. Ogden Wernstrom
+2545;Inez Wong
+0796;Leo Wong

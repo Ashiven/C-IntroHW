@@ -1,0 +1,8 @@
+character 
+CHALACTAR *
+width 
+width 5
+HEIGHT 19
+height -9
+message 
+MASSAGE 

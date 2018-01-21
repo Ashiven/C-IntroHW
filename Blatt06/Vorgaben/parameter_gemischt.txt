@@ -1,0 +1,13 @@
+character *
+character X
+char 
+width     
+height 25
+message "my brain is open"     
+message "Frohe Festtage"
+height 15
+width 27    
+
+
+
+ 
