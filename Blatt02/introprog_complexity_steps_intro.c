@@ -13,7 +13,7 @@ long for_linear(int n, int* befehle)
 	*befehle = 5;
     	long sum = 0;
 
-   	for(int i = 1; i <= n; ++i)
+   	for(int i = 1; i <= n; i++)
 	{
         	sum += get_value_one();
 		*befehle += 4;
@@ -27,10 +27,10 @@ long for_quadratisch(int n, int* befehle)
 	*befehle = 7;
 	long sum = 0;
 	
-	for(int i = 1; i <= n; ++i)
+	for(int i = 1; i <= n; i++)
 	{
 		*befehle += 2;
-		for(int j = 1; j <= n; ++j)
+		for(int j = 1; j <= n; j++)
 		{
 			sum += get_value_one();
 			*befehle += 3;
@@ -44,13 +44,13 @@ long for_kubisch(int n, int* befehle)
 {
 	*befehle = 9;
 	long sum = 0;
-	for(int i = 1; i <= n; ++i)
+	for(int i = 1; i <= n; i++)
 		{
 		*befehle += 2;
-        	for(int j = 1; j <= n; ++j)
+        	for(int j = 1; j <= n; j++)
 			{
 			*befehle += 2;
-			for(int k = 1; k <= n; ++k)
+			for(int k = 1; k <= n; k++)
 			{
 				sum += get_value_one();
 				*befehle += 3;
