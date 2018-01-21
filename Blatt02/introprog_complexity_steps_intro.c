@@ -12,7 +12,6 @@ long for_linear(int n, int* befehle)
 {
 	*befehle = 5;
     	long sum = 0;
-
    	for(int i = 1; i <= n; i++)
 	{
         	sum += get_value_one();
@@ -25,7 +24,6 @@ long for_quadratisch(int n, int* befehle)
 {
 	*befehle = 7;
 	long sum = 0;
-	
 	for(int i = 1; i <= n; i++)
 	{
 		*befehle += 2;
