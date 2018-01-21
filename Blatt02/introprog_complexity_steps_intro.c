@@ -18,7 +18,6 @@ long for_linear(int n, int* befehle)
         	sum += get_value_one();
 		*befehle += 4;
     	}
-
    	return sum;
 }
 
