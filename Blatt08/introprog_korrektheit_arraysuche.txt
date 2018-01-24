@@ -2,11 +2,11 @@
 -----------------------------
 Blatt 8, Aufgabe 2 (2 Fragen)
 -----------------------------
-Tutorium: tXX
-Gruppe: gXX
+Tutorium: t21
+Gruppe: g07
 Gruppenmitglieder:
- - Erika Mustermann
- - Rainer Testfall
+ - Ashkan Ardeshirdavani
+ - Jannik Novak
 ---------------------------------------------
  TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
  DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
@@ -32,7 +32,7 @@ ANTWORT: C19 & A25
 === FRAGE 1 ===
 Gib die Korrektheitsbedingung für den Algorithmus ArraySuche an.
 
-ANTWORT: 
+ANTWORT: M8
 
 === ENDE FRAGE 1 ===
 
@@ -41,6 +41,6 @@ ANTWORT:
 Gib eine Schleifeninvariante der for-Schleife (Zeilen 3-4) an, mit welcher die Korrektheit 
 des Algorithmus ArraySuche bewiesen werden kann.
 
-ANTWORT: 
+ANTWORT: Q28
 
 === ENDE FRAGE 2 ===
