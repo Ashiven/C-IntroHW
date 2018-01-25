@@ -2,11 +2,11 @@
 -----------------------------
 Blatt 8, Aufgabe 1 (2 Fragen)
 -----------------------------
-Tutorium: t21
-Gruppe: g07
+Tutorium: txx
+Gruppe: gxx
 Gruppenmitglieder:
- - Ashkan Ardeshirdavani
- - Jannik Novak
+ - Max Mustermann
+ - Rainer Testfall
 ---------------------------------------------
  TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
  DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
