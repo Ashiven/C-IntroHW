@@ -20,10 +20,10 @@ void insertion_sort(int array[], int len)
 		j = i - 1;
             	while(j >= 0 && array[j] > key) 
 		{
-			array[j++] = array[j];
+			array[j + 1] = array[j];
 			j--;
 		}
-		array[j++] = key;
+		array[j + 1] = key;
 	}
 }
 
