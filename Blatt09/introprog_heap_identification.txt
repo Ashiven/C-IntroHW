@@ -1,0 +1,99 @@
+=== HEADER ===
+-----------------------------
+Blatt 9, Aufgabe 1 (5 Fragen)
+-----------------------------
+Tutorium: t21
+Gruppe: g07
+Gruppenmitglieder:
+ - Ashkan Ardeshirdavani
+ - Jannik Novak
+---------------------------------------------
+ TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
+ DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN
+ BEACHTEN SIE DABEI DAS VORGEGEBENE SCHEMA
+---------------------------------------------
+=== ENDE HEADER ===
+
+
+=== HINWEISE ===
+ - Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+ - Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+ - Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+ - Ersätze neben den jeweils von dir gewählten Antworten unten das leere Kästchen [ ] durch ein [X] oder [x].
+ - Gib die Arrayrepräsentation NUR an, wenn es sich auch um einen Heap handelt!
+ - Trage die Arrayrepräsentation in die eckigen Klammern ([]) durch Kommata getrennt ein.
+ - Beispiel:
+ - [ ] Max-Heap
+ - [x] Min-Heap
+ - ARRAYREPRÄSENTATION: [3,4,10,5,7]
+=== ENDE HINWEISE ===
+
+
+=== FRAGE 1 ===
+Baum 1: Heap oder nicht? Falls es ein Heap ist: ist es ein Min- oder Max-Heap? Gib die Arrayrepräsentation an.
+
+ANTWORT:
+
+	[ ] Max-Heap
+	[ ] Min-Heap
+	ARRAYREPRÄSENTATION: []
+	[x] Kein Heap
+
+KOMMENTAR:
+=== ENDE FRAGE 1 ===
+
+
+=== FRAGE 2 ===
+Baum 2: Heap oder nicht? Falls es ein Heap ist: ist es ein Min- oder Max-Heap? Gib die Arrayrepräsentation an.
+
+ANTWORT:
+
+	[x] Max-Heap
+	[ ] Min-Heap
+	ARRAYREPRÄSENTATION: [20, 12, 16, 4, 9, 15]
+	[ ] Kein Heap
+
+KOMMENTAR:
+=== ENDE FRAGE 2 ===
+
+
+=== FRAGE 3 ===
+Baum 3: Heap oder nicht? Falls es ein Heap ist: ist es ein Min- oder Max-Heap? Gib die Arrayrepräsentation an.
+
+ANTWORT:
+
+	[ ] Max-Heap
+	[x] Min-Heap
+	ARRAYREPRÄSENTATION: [1, 2, 5, 3, 4, 6, 7]
+	[ ] Kein Heap
+
+KOMMENTAR:
+=== ENDE FRAGE 3 ===
+
+
+=== FRAGE 4 ===
+Baum 4: Heap oder nicht? Falls es ein Heap ist: ist es ein Min- oder Max-Heap? Gib die Arrayrepräsentation an.
+
+ANTWORT:
+
+	[ ] Max-Heap
+	[x] Min-Heap
+	ARRAYREPRÄSENTATION: [10, 1000, 100, 1000]
+	[] Kein Heap
+
+KOMMENTAR:
+=== ENDE FRAGE 4 ===
+
+
+=== FRAGE 5 ===
+Baum 5: Heap oder nicht? Falls es ein Heap ist: ist es ein Min- oder Max-Heap? Gib die Arrayrepräsentation an.
+
+ANTWORT:
+
+	[ ] Max-Heap
+	[ ] Min-Heap
+	ARRAYREPRÄSENTATION: []
+	[x] Kein Heap
+
+KOMMENTAR:
+=== ENDE FRAGE 5 ===

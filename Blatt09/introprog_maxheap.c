@@ -1,10 +1,10 @@
 /* === INTROPROG ABGABE ===
  * Blatt 9, Aufgabe 2
- * Tutorium: tXX
- * Gruppe: gXX
+ * Tutorium: t21
+ * Gruppe: g07
  * Gruppenmitglieder:
- *  - Erika Mustermann
- *  - Rainer Testfall
+ *  - Ashkan Ardeshirdavani
+ *  - Jannik Novak
  * ========================
  */
 
@@ -15,44 +15,79 @@
 
 #include "introprog_heap.h"
 
-/* Reserviere Speicher für einen Heap
- *
- * Der Heap soll dabei Platz für capacity Elemente bieten.
- *
- * Um konsistent mit den Parametern für malloc zu sein, ist capacity
- * als size_t (entspricht unsigned long auf x86/64) deklariert.
- * Da es sauberer ist, sind auch alle Indizes in dieser Aufgabe als
- * size_t deklariert. Ob man size_t oder int als Index für ein Array
- * verwendet, macht in der Praxis (auf x86/64) nur bei Arrays
- * mit mehr als 2.147.483.647 Elementen einen Unterschied.
- */
-heap* heap_create(size_t capacity) {
+heap* heap_create(size_t capacity) 
+{
+	heap *new_heap = (heap*)malloc(sizeof(heap));
+	new_heap -> elements = (int*)malloc(capacity * sizeof(int));
+	new_heap -> size = 0;
+	new_heap -> capacity = capacity;
+	return new_heap;
 }
 
-/* Stellt die Heap Bedingung an Index i wieder her
- *
- * Vorraussetzung: Der linke und rechte Unterbaum von i
- * erfüllen die Heap-Bedingung bereits.
- */
-void heapify(heap* h, size_t i) {
+void heapify(heap* h, size_t i) 
+{
+	size_t l = (i + 1) * 2 - 1;
+	size_t r = (i + 1) * 2; 
+	size_t largest, temp;
+
+		if(l < h -> size && h -> elements[l] > h -> elements[i]) 
+		{
+			largest = l; 
+		}
+		else {
+			largest = i; 
+		}
+		if(r < h -> size && h -> elements[r] > h -> elements[largest])
+		{
+			largest = r; 
+		}
+			if(largest != i) 
+			{
+				temp = h -> elements[largest];
+				h -> elements[largest] = h -> elements[i];
+				h -> elements[i] = temp;
+				heapify(h, largest);
+			}
 }
 
-/* Holt einen Wert aus dem Heap
- *
- * Wenn der Heap nicht leer ist, wird die größte Zahl zurückgegeben.
- * Wenn der Heap leer ist, wird -1 zurückgegeben.
- */
-int heap_extract_max(heap* h) {
+int heap_extract_max(heap* h) 
+{
+	size_t max;
+	if(h -> size < 1) 
+	{
+		return -1;
+	}
+	else {
+		max = h -> elements[0];
+		h -> elements[0] = h -> elements[h -> size - 1];
+		h -> size = h -> size - 1;
+		heapify(h, 0);
+		return max;
+	}	
 }
 
-/* Fügt einen Wert in den Heap ein
- *
- * Wenn der Heap bereits voll ist, wird -1 zurückgegeben,
- */
-int heap_insert(heap* h, int key) {
+int heap_insert(heap* h, int key) 
+{
+	size_t pc = h -> size;
+	if(h -> size == h -> capacity)
+	{
+		return -1;
+	}
+
+	h -> size = h -> size + 1;
+
+	while(pc != 0 && h -> elements[(pc + 1) / 2 - 1] < key)
+	{
+		h -> elements[pc] = h -> elements[(pc + 1) / 2 - 1];
+		pc = (pc + 1) / 2 - 1;
+	}
+	h -> elements[pc] = key;
+
+	return 0;
 }
 
-/* Gibt den Speicher von einem Heap wieder frei
- */
-void heap_free(heap* h) {
+void heap_free(heap* h) 
+{
+	free(h -> elements);
+	free(h);
 }
