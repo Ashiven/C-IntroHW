@@ -41,6 +41,6 @@ ANTWORT: M8
 Gib eine Schleifeninvariante der for-Schleife (Zeilen 3-4) an, mit welcher die Korrektheit 
 des Algorithmus ArraySuche bewiesen werden kann.
 
-ANTWORT: Q28
+ANTWORT: O28
 
 === ENDE FRAGE 2 ===
