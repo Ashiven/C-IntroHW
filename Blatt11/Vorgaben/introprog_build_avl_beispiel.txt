@@ -1,0 +1,212 @@
+=== HEADER === 
+-----------------------------
+Blatt 11, Aufgabe 1 
+-----------------------------
+Tutorium: tXX 
+Gruppe: gXX 
+Gruppenmitglieder:
+ - Erika Mustermann
+ - Rainer Testfall
+---------------------------------------------
+ TRAGEN SIE OBEN DIE GRUPPENMITGLIEDER SOWIE
+ DEN NAMEN IHRER GRUPPE UND IHR TUTORIUM EIN 
+ BEACHTEN SIE DABEI DAS VORGEGEBENE SCHEMA
+---------------------------------------------
+=== ENDE HEADER === 
+
+=== HINWEISE ===
+- Editiere diese Datei AUSSCHLIESSLICH mit einem Editor wie Kate, Gedit, vi(m) oder emacs.
+- Editiere diese Datei KEINESFALLS mit einer Textverarbeitung wie Word oder LibreOffice.
+- Editiere oben den Header und trage die Daten deiner Gruppe ein. Behalte das Schema bei.
+- Füge die Elemente 100,50,25,10,37,32,200 nacheinander in einen initial leeren AVL-Baum ein
+- Ersätze neben den jeweils von dir gewählten Antworten unten das leere Kästchen [ ] durch ein [X] oder [x] und trage hinter dem Doppelpunkt die Zahl ein, die entweder in den AVL Baum eingefügt wird oder um die rotiert wird.
+	
+	Beispiel 1 Folgende Notation fügt einen Knoten mit dem Wert 42 dem AVL Baum hinzu: 
+		[x] Einfügen: 42
+		[ ] Linksrotation:
+		[ ] Rechtsrotation:
+		[ ] Nichts mehr zu tun
+
+	Beispiel 2 Folgende Notation beschreibt eine Rechtsrotation um den Knoten mit dem Wert 23
+		[ ] Einfügen: 
+		[ ] Linksrotation:
+		[x] Rechtsrotation: 23
+		[ ] Nichts mehr zu tun
+
+- Gib am Ende jedes Schrittes den aktuellen Zustand des AVL Baumes an. Dabei werden die Knoten wie bekannt nummeriert. 1:5 beschreibt somit den Knoten mit Index 1 und Wert 5. Zusätzlich muss noch der Balance-Wert in eckigen Klammern angegeben werden.
+	
+	Beispiel 3 Folgende Notation beschreibt einen unbalancierten AVL Baum mit drei Knoten
+ 		1:13[2]
+		2:5[1]
+		4:2[0]
+
+- In jedem Schritt darf maximal EINE Option gewählt werden, d.h. Einfügen eines Wertes und eine folgende Rotation sind ZWEI Schritte
+- Es sind 13 Schritte vorgegeben. Das heißt nicht, dass auch 13 Schritte benötigt werden. Falls alle Werte eingefügt und der AVL Baum balanciert ist, kreuze "Nichts mehr zu tun" an. Den Zustand des Baumes musst du dann nicht mehr angeben
+
+=== ENDE HINWEISE ===
+
+=== SCHRITT 1 ===
+
+[x] Einfügen: 23
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[0]
+
+=== ENDE SCHRITT 1 ===
+
+=== SCHRITT 2 ===
+
+[x] Einfügen: 55
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[-1]
+3:55[0]
+=== ENDE SCHRITT 2 ===
+
+=== SCHRITT 3 ===
+
+[x] Einfügen: 11 
+[ ] Linksrotation:
+[ ] Rechtsrotation: 
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[0]
+2:11[0]
+3:55[0]
+=== ENDE SCHRITT 3 ===
+
+=== SCHRITT 4 ===
+
+[x] Einfügen: 9
+[ ] Linksrotation:
+[ ] Rechtsrotation: 
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[1]
+2:11[1]
+3:55[0]
+4:9[0]
+
+=== ENDE SCHRITT 4 ===
+
+=== SCHRITT 5 ===
+
+[x] Einfügen: 10
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[2]
+2:11[2]
+3:55[0]
+4:9[-1]
+9:10[0]
+
+=== ENDE SCHRITT 5 ===
+
+=== SCHRITT 6 ===
+
+[ ] Einfügen:
+[x] Linksrotation: 9
+[ ] Rechtsrotation: 
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[2]
+2:11[2]
+3:55[0]
+4:10[1]
+8:9[0]
+
+=== ENDE SCHRITT 6 ===
+
+=== SCHRITT 7 ===
+
+[ ] Einfügen: 
+[ ] Linksrotation:
+[x] Rechtsrotation: 11
+[ ] Nichts mehr zu tun
+
+Resultierender Baum:
+1:23[1]
+2:10[0]
+3:55[0]
+4:9[0]
+5:11[0]
+
+=== ENDE SCHRITT 7 ===
+
+=== SCHRITT 8 ===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+=== ENDE SCHRITT 8 ===
+
+=== SCHRITT 9 ===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+=== ENDE SCHRITT 9 ===
+
+=== SCHRITT 10 ===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation: 
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+=== ENDE SCHRITT 10 ===
+
+=== SCHRITT 11 ===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+=== ENDE SCHRITT 11 ===
+
+=== SCHRITT 12 ===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+=== ENDE SCHRITT 12 ===
+
+===SCHRITT 13===
+
+[ ] Einfügen:
+[ ] Linksrotation:
+[ ] Rechtsrotation:
+[x] Nichts mehr zu tun
+
+Resultierender Baum:
+
+===ENDE SCHRITT 13===
