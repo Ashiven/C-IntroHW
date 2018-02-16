@@ -1,10 +1,10 @@
 /* === INTROPROG ABGABE ===
  * Blatt 11, Aufgabe 2
- * Tutorium: t21
- * Gruppe: g07
+ * Tutorium: txx
+ * Gruppe: gxx
  * Gruppenmitglieder:
- *  - Ashkan Ardeshirdavani
- *  - Jannik Novak
+ *  - Max Mustermann
+ *  - Rainer Testfall
  * ========================
  */
 #include <stdlib.h>		
